@@ -1,0 +1,355 @@
+/* ============= tab ========== */
+@media only screen and (max-width: 1024px) {
+  :root {
+    --header-color: #0076a3;
+    --text-color: #fff;
+    --card-bg-color: #006847;
+    --shadow-color: #191a23;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 0px 10px;
+  }
+  .grid2 {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  /* ====== responsive ===== */
+  input[type="checkbox"]:checked ~ .menu,
+  input[type="checkbox"]:checked ~ .close-menu {
+    display: block;
+  }
+  input[type="checkbox"]:checked ~ .open-menu {
+    display: none;
+  }
+  .open-menu {
+    display: block;
+  }
+  /* ================================ */
+  .contact .contact-box .cb-right-side {
+    display: none;
+  }
+  .happen {
+    padding: 50px;
+  }
+  .happen .happen-container .hc-left-side {
+    width: 100%;
+  }
+  .happen .happen-container .hc-right-side {
+    display: none;
+  }
+
+  .footer nav,
+  .footer .footer-contact {
+    flex-direction: column;
+    text-align: center;
+    gap: 37px;
+  }
+
+  .case-studies .cs-box {
+    flex-direction: column;
+  }
+
+  .case-studies .cs-box hr,
+  .footer hr {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+  }
+  .footer .footer-copy-right{
+    justify-content: center;
+  }
+
+  .service .heading,
+  .case-studies .heading,
+  .working .heading,
+  .team .heading,
+  .testimonials .heading,
+  .contact .heading {
+    margin: 60px auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  /*======= responsive end ======= */
+  .header {
+    background-color: var(--header-color);
+  }
+  .header .main-menu .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--header-color);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    overflow: auto;
+    padding: 20px 0px 40px;
+    right: 0%;
+    top: 100%;
+    flex-direction: column;
+  }
+  .header nav .main-menu ul {
+    flex-direction: column;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes anim {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+
+  .header nav .main-menu .menu ul li a {
+    color: var(--text-color);
+    font-size: 30px;
+  }
+
+  .header nav .main-menu .menu ul .sign-up a {
+    border-radius: 14px;
+    border: 1px solid var(--shadow-color);
+    padding: 20px 35px;
+  }
+  /* ==========header end ===== hero area start ====== */
+  .hero-area {
+    margin: 100px auto 43px;
+  }
+  .hero-container {
+    flex-direction: column;
+    gap: 43px;
+  }
+  .hero-area .hero-container .hc-left-side {
+    width: 100%;
+  }
+}
+/* ============ hero area end ======= happen section start ======== */
+
+/* ======== mobile ============ */
+@media only screen and (max-width: 769px) {
+  :root {
+    --bg-color: #fff;
+    --font-color: #000000;
+    --card-bg-color: #b9ff66;
+    --shadow-color: #191a23;
+  }
+  .grid,
+  .grid2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  /* =================================== */
+
+  .header {
+    background-color: var(--bg-color);
+  }
+  .header .main-menu .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-color);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    overflow: auto;
+    padding: 20px 0px 40px;
+    right: 0%;
+    top: 100%;
+    flex-direction: column;
+  }
+
+  .header nav .main-menu ul {
+    flex-direction: column;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .header nav .main-menu .menu ul li a {
+    color: var(--font-color);
+    font-size: 20px;
+  }
+  @keyframes anim {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0%;
+    }
+  }
+  /* ==========header end ===== hero area start ====== */
+
+  .hero-area .hero-container .hc-left-side h1 {
+    font-size: 43px;
+  }
+  .hero-area .hero-container .hc-left-side p {
+    font-size: 16px;
+    line-height: 24px; /* 140% */
+  }
+  /* =============== hero area end ====== service area start ======== */
+
+  .service .heading,
+  .case-studies .heading,
+  .working .heading,
+  .team .heading,
+  .testimonials .heading,
+  .contact .heading {
+    margin: 60px auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service .heading h2,
+  .case-studies .heading h2,
+  .working .heading h2,
+  .team .heading h2,
+  .testimonials .heading h2,
+  .contact .heading h2 {
+    font-size: 36px;
+  }
+
+  .service .heading p,
+  .case-studies .heading p,
+  .working .heading p,
+  .team .heading p,
+  .testimonials .heading p,
+  .contact .heading p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* ======================================== */
+  .service .single-box {
+    align-items: end;
+  }
+
+  .service .single-box .sg-right-side {
+    padding-left: 10px;
+  }
+
+  .service .single-box h3 {
+    font-size: 26px;
+  }
+  .service .single-box span {
+    display: none;
+  }
+  /* ============ service end ======= happen section start ======== */
+  .happen {
+    padding: 50px;
+  }
+  .happen .happen-container .hc-left-side {
+    width: 100%;
+  }
+  .happen .happen-container .hc-right-side {
+    display: none;
+  }
+
+  .happen .happen-container .hc-left-side h3 {
+    font-size: 26px;
+  }
+  .happen .happen-container .hc-left-side p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  /* ============ happen section end ====== case studies section start ======= */
+  .case-studies .cs-box {
+    flex-direction: column;
+  }
+
+  /* ============ case studies section end ====== Our Working  section start ======= */
+
+  .working .working-box .single-working-box details summary {
+    font-size: 18px;
+  }
+  .working .working-box .single-working-box details summary::before,
+  summary::after {
+    width: 18px;
+  }
+  /* ============ Our Working section end ====== Team  section start ======= */
+  .testimonials .testimonials-box {
+    flex-direction: column;
+  }
+
+  /* ========= Testimonials section end  ====  contact us section start======= */
+  .contact .contact-box {
+    padding: 10px 20px;
+  }
+
+  .contact .contact-box .cb-left-side .cb-ls-label {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .contact .contact-box .cb-left-side .message-section input,
+  textarea {
+    width: 330px;
+    padding: 18px 20px;
+  }
+  .contact .contact-box .cb-left-side input[type="submit"] {
+    width: 330px;
+    padding: 18px 20px;
+  }
+
+  .contact .contact-box .cb-right-side {
+    display: none;
+  }
+
+  /* ========= Contact us section end  ====  footer section start======= */
+  .footer {
+    padding: 50px 20px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+    margin-top: 90px;
+  }
+  .footer nav {
+    flex-direction: column;
+    gap: 37px;
+  }
+  .footer nav .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .footer nav .menu ul li a {
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+  }
+
+  .footer nav .social-link {
+    display: none;
+  }
+
+  .footer .social-link {
+    display: block;
+    text-align: center;
+  }
+  .footer .social-link i {
+    margin: 0px 10px;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .footer .footer-contact {
+    flex-direction: column;
+    text-align: center;
+    gap: 37px;
+  }
+
+  .footer .footer-contact .fc-left-side,
+  .fc-right-side,
+  .footer .footer-copy-right {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-contact .fc-left-side h4 {
+    font-size: 18px;
+  }
+  .footer .footer-contact .fc-left-side p {
+    font-size: 13px;
+  }
+  .footer .footer-copy-right p,
+  .footer .footer-copy-right a {
+    font-size: 13px;
+    line-height: 0px;
+  }
+}
