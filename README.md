@@ -6,7 +6,8 @@
 * Web Development Batch 2
 * Assignment 5 (Positivus Landing Page Design)
 * [Live Link](https://asf-wd-assignment5.netlify.app/)
-* [GitHub Project Link](https://github.com/as-sunnah-skill-development-institute/assdi-batch2-assignment-5-GmMamunH)
+* [GitHub Project Link](https://github.com/GmMamunH/asf-wd-assignment5)
+* [GitHub Repo Link](https://github.com/as-sunnah-skill-development-institute/assdi-batch2-assignment-5-GmMamunH)
 * Assignment Submit Date:- 17 April 2024
 * Name:-  Md Mamun Hossain 
 * Discord User Name:- gmmamunh

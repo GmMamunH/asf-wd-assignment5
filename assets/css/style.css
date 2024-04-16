@@ -29,6 +29,8 @@ html {
   --font-color: #000000;
   --card-bg-color: #b9ff66;
   --shadow-color: #191a23;
+  --hover-color: #ff0000;
+  --hover-bg: #fff000;
 }
 
 body {
@@ -116,8 +118,8 @@ img {
 .header nav .main-menu label {
   width: 50px;
   height: 50px;
-  color: red;
-  background-color: yellow;
+  color: var(--hover-color);
+  background-color: var(--hover-bg);
   font-size: 35px;
   padding: 5px;
   text-align: center;
@@ -132,7 +134,7 @@ img {
   line-height: 28px;
 }
 .header nav .main-menu .menu ul li a:hover {
-  color: red;
+  color: var(--hover-color);
 }
 
 .header nav .main-menu .menu ul .sign-up a {
@@ -141,8 +143,8 @@ img {
   padding: 20px 35px;
 }
 .header nav .main-menu .menu ul .sign-up a:hover {
-  background-color: yellow;
-  border-color: red;
+  background-color: var(--hover-bg);
+  border-color: var(--hover-color);
 }
 /* ============ header section end ============ */
 
@@ -363,7 +365,7 @@ img {
 summary::after {
   width: 30px;
   height: 0;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid var(--hover-color);
   position: absolute;
   top: calc(50% - 1px);
   right: 0;

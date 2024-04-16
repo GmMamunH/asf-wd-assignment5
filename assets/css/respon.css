@@ -24,51 +24,7 @@
   .open-menu {
     display: block;
   }
-  /* ================================ */
-  .contact .contact-box .cb-right-side {
-    display: none;
-  }
-  .happen {
-    padding: 50px;
-  }
-  .happen .happen-container .hc-left-side {
-    width: 100%;
-  }
-  .happen .happen-container .hc-right-side {
-    display: none;
-  }
 
-  .footer nav,
-  .footer .footer-contact {
-    flex-direction: column;
-    text-align: center;
-    gap: 37px;
-  }
-
-  .case-studies .cs-box {
-    flex-direction: column;
-  }
-
-  .case-studies .cs-box hr,
-  .footer hr {
-    width: 100%;
-    height: 1px;
-    background: #fff;
-  }
-  .footer .footer-copy-right{
-    justify-content: center;
-  }
-
-  .service .heading,
-  .case-studies .heading,
-  .working .heading,
-  .team .heading,
-  .testimonials .heading,
-  .contact .heading {
-    margin: 60px auto;
-    flex-direction: column;
-    text-align: center;
-  }
   /*======= responsive end ======= */
   .header {
     background-color: var(--header-color);
@@ -122,8 +78,58 @@
   .hero-area .hero-container .hc-left-side {
     width: 100%;
   }
+
+
+  /* ================================ */
+  /* ============ hero area end ======= happen section start ======== */
+  .contact .contact-box .cb-right-side {
+    display: none;
+  }
+  .happen {
+    padding: 50px;
+  }
+  .happen .happen-container .hc-left-side {
+    width: 100%;
+  }
+  .happen .happen-container .hc-right-side {
+    display: none;
+  }
+
+  .footer nav,
+  .footer .footer-contact {
+    flex-direction: column;
+    text-align: center;
+    gap: 37px;
+  }
+
+  .case-studies .cs-box {
+    flex-direction: column;
+  }
+
+  .case-studies .cs-box hr,
+  .footer hr {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+  }
+  .footer .footer-copy-right{
+    justify-content: center;
+  }
+
+  .service .heading,
+  .case-studies .heading,
+  .working .heading,
+  .team .heading,
+  .testimonials .heading,
+  .contact .heading {
+    margin: 60px auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
 }
-/* ============ hero area end ======= happen section start ======== */
+/* =============== tab section end ================= */
 
 /* ======== mobile ============ */
 @media only screen and (max-width: 769px) {
